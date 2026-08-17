@@ -1,0 +1,52 @@
+! input file; use ! or # for skipping lines
+
+#####################################################################
+SILCS_RULES  /opt/silcsbio/apps/silcsbio/silcsbio.2025/data/silcs/silcs_classification_rules_2021_generic_apolar_scale_1f.dat
+CGENFF_RULES /opt/silcsbio/apps/silcsbio/silcsbio.2025/data/cgenff/cgenff.rules
+CGENFF_PAR   /opt/silcsbio/apps/silcsbio/silcsbio.2025/data/cgenff/par_all36_cgenff.prm
+GFE_CAP  3.0
+
+MINIMIZE_INPUT false
+MINIMIZE_BFGS false
+MIN_STEPS 10000
+
+MC_MOVE_RANGE  1.0  180.0  180.0
+MC_STEPS 10000
+MC_RUN 1                       !  
+MC_STEPS2 10000                !  
+MC_MOVE_RANGE2  0.1  9.0  60.0 ! 
+
+SIM_ANNEAL_MOVE_RANGE  0.2 9.0 9.0
+SIM_ANNEAL_STEPS  40000
+
+DELTAE_TOLERANCE 0.01
+TOT_RUNS 1250
+DELTA_LGFE_BUFF 10.0
+SILCS_LGFE_NORMALIZE false
+RANDOM_SEED true
+#####################################################################
+
+RANDOM_INIT_ORIENT true    ! false to use starting orientation
+                           ! true to randomize orientation
+
+SIMULATION_CENTER 25.83 69.428 81.692
+SIMULATION_RADIUS 10.0
+
+!FORMAT OF SPECIFYING MAPS: SILCSMAP  <TYPE>  <FILENAME>
+SILCSMAP BENC /home/rgama/silcs_runs/hcar/maps/1xvp.apolar.gfe.map 0.167
+SILCSMAP PRPC /home/rgama/silcs_runs/hcar/maps/1xvp.apolar.gfe.map 0.333
+SILCSMAP MEOO /home/rgama/silcs_runs/hcar/maps/1xvp.meoo.gfe.map   1.000
+SILCSMAP FORN /home/rgama/silcs_runs/hcar/maps/1xvp.forn.gfe.map   1.000
+SILCSMAP FORO /home/rgama/silcs_runs/hcar/maps/1xvp.foro.gfe.map   1.000
+SILCSMAP FORC /home/rgama/silcs_runs/hcar/maps/1xvp.forc.gfe.map   1.000
+SILCSMAP MAMC /home/rgama/silcs_runs/hcar/maps/1xvp.mamn.gfe.map   1.000
+SILCSMAP MAMN /home/rgama/silcs_runs/hcar/maps/1xvp.mamn.gfe.map   1.000
+SILCSMAP ACEC /home/rgama/silcs_runs/hcar/maps/1xvp.acec.gfe.map   1.000
+SILCSMAP IMIN /home/rgama/silcs_runs/hcar/maps/1xvp.imin.gfe.map   1.000
+SILCSMAP IMIH /home/rgama/silcs_runs/hcar/maps/1xvp.iminh.gfe.map  1.000
+SILCSMAP GEND /home/rgama/silcs_runs/hcar/maps/1xvp.hbdon.gfe.map  1.000
+SILCSMAP GENA /home/rgama/silcs_runs/hcar/maps/1xvp.hbacc.gfe.map  1.000
+SILCSMAP GEHC /home/rgama/silcs_runs/hcar/maps/1xvp.gehc.gfe.map   0.333
+SILCSMAP DMEO /home/rgama/silcs_runs/hcar/maps/1xvp.dmeo.gfe.map   1.000
+SILCSMAP EXCL /home/rgama/silcs_runs/hcar/maps/1xvp.excl.map       1.000
+SILCSMAP NCLA /home/rgama/silcs_runs/hcar/maps/1xvp.zero.map       1.000

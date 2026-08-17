@@ -1,0 +1,11 @@
+############## VERSION INFO ##############
+2025
+# built on Thu Apr 17 04:24:25 PM EDT 2025
+############## FRAGMAP INFO ##############
+# GENERATED ON: Sat Nov 22 23:10:43 EST 2025
+# TEMPERATURE: 298
+# NUMSYS: 10
+# CYCLES: 1 - 100
+#  restraints_mode=calpha
+#  restraints_string="a CA"
+#  restraints_fc=50.208
