@@ -21,4 +21,3 @@ SILCS data for Keap1 (Kelch domain), used to probe the Keap1-Nrf2 binding site.
 - Both `params.inp` files reference maps by **absolute path** from the machines they were generated on (`/home/rgama/silcs_runs/hcar/...` for hCAR, `/home/wenbo/keap1/...` for Keap1), not by the repo-relative `maps/` folder next to them. Update the `SILCSMAP` lines to point at your local copy of `maps/` before running SILCS-MC docking from a fresh clone.
 - Generated with SilcsBio 2025 (`LBD_hCAR`) / 2023 (`keap1`); see each `params.inp` header for the exact rules/parameter files used.
 - The SILCS Software Suite to perform the SILCS simulations and MC docking may be obtained from SilcsBio LLC (https://silcsbio.com/)
-- 
